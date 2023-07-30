@@ -3,12 +3,12 @@ using System.Collections.Generic;
 
 public class ServiceCatalog
 {
-    public int ClientID { get; set; }
-    public string ServiceOffered { get; set; }
-    public string Contracts { get; set; }
-    public string Description { get; set; }
-    public decimal Price { get; set; }
-    public bool ServiceAvailability { get; set; }
+    private int ClientID { get; set; }
+    private string ServiceOffered { get; set; }
+    private string Contracts { get; set; }
+    private string Description { get; set; }
+    private decimal Price { get; set; }
+    private bool ServiceAvailability { get; set; }
 
     private List<ServiceCatalog> services = new List<ServiceCatalog>();
 

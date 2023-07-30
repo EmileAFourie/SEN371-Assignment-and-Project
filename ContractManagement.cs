@@ -10,7 +10,7 @@ public class Contract
     public void ModifyService(string newName, string newDescription, double newFee)
     {
         // Implement the logic to modify the contract's service details
-        // For demonstration purposes, let's just display the updated details for now
+        // For demonstration purposes
         Console.WriteLine($"Modifying service for ContractID: {ContractID}");
         Console.WriteLine($"Old NameOfContract: {NameOfContract}");
         Console.WriteLine($"Old Description: {Description}");
