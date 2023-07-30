@@ -8,11 +8,12 @@ public class ClientDetail
     public string CellNo { get; set; }
     public string Email { get; set; }
     public int ContractId { get; set; }
+    public string ClientType { get; set; }
 
     public void PostToDb()
     {
-        // Implement the logic to save the client details to the database here
-        // For demonstration purposes, let's just display the details for now
+        // Code to save the client details to the database
+        // For demonstration purposes
         Console.WriteLine("Posting client details to the database...");
         Console.WriteLine($"ClientID: {ClientID}");
         Console.WriteLine($"Name: {Name}");
@@ -20,6 +21,7 @@ public class ClientDetail
         Console.WriteLine($"CellNo: {CellNo}");
         Console.WriteLine($"Email: {Email}");
         Console.WriteLine($"ContractId: {ContractId}");
+        Console.WriteLine($"ClientType: {ClientType}");
         Console.WriteLine("Client details posted successfully!");
     }
 }
