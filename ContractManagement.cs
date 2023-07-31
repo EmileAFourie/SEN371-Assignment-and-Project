@@ -11,6 +11,8 @@ public class Contract
     protected bool Availablilty { get; set; }
     public int ClientID { get; set; }
 
+    public Contract (){ }
+
     public void ModifyContract(string newName, string newDescription, double newFee)
     {
         //Implementation to modify a existing contract
