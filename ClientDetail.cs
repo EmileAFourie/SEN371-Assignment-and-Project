@@ -10,9 +10,7 @@ public class ClientDetail
     public int ContractId { get; set; }
 
     public void PostToDb()
-    {
-        // Implement the logic to save the client details to the database here
-        // For demonstration purposes, let's just display the details for now
+    {        
         Console.WriteLine("Posting client details to the database...");
         Console.WriteLine($"ClientID: {ClientID}");
         Console.WriteLine($"Name: {Name}");

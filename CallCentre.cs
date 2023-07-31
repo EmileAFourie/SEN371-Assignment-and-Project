@@ -18,7 +18,7 @@ public class CallCenter
     public void EndCall()
     {
         Console.WriteLine($"Ending call from {phoneNumber}");
-        // Perform any necessary cleanup or logging here
+        // End call
     }
 
     public void GetPreviousRequest()
@@ -29,13 +29,13 @@ public class CallCenter
 
     public void CreateTicket(string issueDescription)
     {
-        // Create a new ticket with the provided issue description
+        // Create a new ticket 
         Console.WriteLine($"Creating ticket for {phoneNumber} - Issue: {issueDescription}");
     }
 
     public void GetClientDetails()
     {
-        // Retrieve and display client details based on the phone number
+        // Retrieve client details with their phonenumber
         Console.WriteLine($"Getting client details for {phoneNumber}");
     }
 }

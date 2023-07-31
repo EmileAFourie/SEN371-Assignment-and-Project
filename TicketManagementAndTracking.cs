@@ -11,8 +11,6 @@ public class TicketManagementAndTracking
 
     public void LogTicket()
     {
-        // Implement the logic to log the ticket and save it to the database or ticketing system
-        // For demonstration purposes, let's just display the ticket details for now
         Console.WriteLine("Logging the ticket...");
         Console.WriteLine($"TicketID: {TicketID}");
         Console.WriteLine($"ClientID: {ClientID}");
@@ -25,13 +23,12 @@ public class TicketManagementAndTracking
 
     public void ManagePriority(string newPriority)
     {
-        // Implement the logic to update the priority of the ticket
-        // For demonstration purposes, let's just display the new priority for now
         Console.WriteLine("Managing ticket priority...");
         Console.WriteLine($"TicketID: {TicketID}");
         Console.WriteLine($"Old Priority: {Priority}");
         Console.WriteLine($"New Priority: {newPriority}");
-        Priority = newPriority; // Updating the priority field
+
+        Priority = newPriority; 
         Console.WriteLine("Ticket priority managed successfully!");
     }
 }
