@@ -3,25 +3,40 @@ using System;
 public class Contract
 {
     public int ContractID { get; set; }
-    public string NameOfContract { get; set; }
-    public string Description { get; set; }
-    public double Fee { get; set; }
+    public string ContractName { get; set; }
+    private string StartDate { get; set; }
+    private string EndDate { get; set; }
+    private string Description { get; set; }
+    private double Price { get; set; }
+    protected bool Availablilty { get; set; }
+    public int ClientID { get; set; }
 
-    public void ModifyService(string newName, string newDescription, double newFee)
+    public void ModifyContract(string newName, string newDescription, double newFee)
     {
-        Console.WriteLine($"Modifying service for ContractID: {ContractID}");
-        Console.WriteLine($"Old NameOfContract: {NameOfContract}");
-        Console.WriteLine($"Old Description: {Description}");
-        Console.WriteLine($"Old Fee: {Fee}");
-
-        //Contract's service details update
-        NameOfContract = newName;
-        Description = newDescription;
-        Fee = newFee;
-
-        Console.WriteLine("Service modified successfully!");
-        Console.WriteLine($"New NameOfContract: {NameOfContract}");
-        Console.WriteLine($"New Description: {Description}");
-        Console.WriteLine($"New Fee: {Fee}");
+        //Implementation to modify a existing contract
+    }
+    public void AddContract(string newName, string newDescription, double newFee)
+    {
+        //Implementation to add a new contract
+    }
+    public void ViewActiveContracts()
+    {
+        //Implementation to view the currently active contracts the client has
+    }
+    public void RenewContract()
+    {
+        //Implementation to renew the currently active contract the client has
+    }
+    public void ViewContract()
+    {
+        //Implementation to view the details of the avalible contracts
+    }
+    public void DeleteContract()
+    {
+        //Implementation to remove a contract
+    }
+    public void ContractAvailability()
+    {
+        //Implementation to see what contacts are currently being offered
     }
 }

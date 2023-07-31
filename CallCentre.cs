@@ -2,40 +2,32 @@ using System;
 
 public class CallCenter
 {
-    private DateTime timestamp;
-    private string phoneNumber;
-    private bool isNew;
+    private DateTime timeStamp;
+    public string cellNo;
+    protected bool isNew;
 
-    public void AnswerCall(string phoneNumber, bool isNew)
+    public void AnswerCall(string cellNo, bool isNew)
     {
-        this.timestamp = DateTime.Now;
-        this.phoneNumber = phoneNumber;
-        this.isNew = isNew;
-
-        Console.WriteLine($"Answering call from {phoneNumber}. Is new call: {isNew}");
+        //Implementation to start loging a call from a client
     }
 
-    public void EndCall()
+    private void EndCall()
     {
-        Console.WriteLine($"Ending call from {phoneNumber}");
-        // End call
+        //Implementation to stop logging a call from a client
     }
 
     public void GetPreviousRequest()
     {
-        // Retrieve and display the previous request for this phone number
-        Console.WriteLine($"Getting previous request for {phoneNumber}");
+       //Implementation to retrieve the previous ticket logged by a client
     }
 
     public void CreateTicket(string issueDescription)
     {
-        // Create a new ticket 
-        Console.WriteLine($"Creating ticket for {phoneNumber} - Issue: {issueDescription}");
+       //Implementation to create a new ticket for a client
     }
 
-    public void GetClientDetails()
+    public ClientDetail GetClientDetails()
     {
-        // Retrieve client details with their phonenumber
-        Console.WriteLine($"Getting client details for {phoneNumber}");
+        //Implementation to obtain the client details
     }
 }
