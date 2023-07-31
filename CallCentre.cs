@@ -6,6 +6,8 @@ public class CallCenter
     public string cellNo;
     protected bool isNew;
 
+    public CallCenter(){}
+
     public void AnswerCall(string cellNo, bool isNew)
     {
         //Implementation to start loging a call from a client

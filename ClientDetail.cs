@@ -10,6 +10,16 @@ public class ClientDetail
     protected int ContractId { get; set; }
     protected string ClientType { get; set; }
 
+    public ClientDetail(int ClientID, string Name, string Address, string CellNo, string Email, string ClientType, string ContractId){
+        this.ClientID = ClientID;
+        this.Name = Name;
+        this.Address = Address;
+        this.CellNo = CellNo;
+        this.Email = Email;
+        this.ClientType = ClientType;
+        this.ContractId = ContractId;
+    }
+
     public void UpdateContractDetials()
     {
         //Implemntation to modify the client detials in the database
