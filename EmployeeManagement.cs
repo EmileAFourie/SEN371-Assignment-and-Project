@@ -9,7 +9,7 @@ public class EmployeeManagement
     private string position;
     private int age;
     private string performance;
-    private List<int> ticketIDs;
+    private List<int> ticketIDs; // List to store ticket ID for one employee for multiple jobs i.e. one-to-many relationship
 
     private static List<EmployeeManagement> employeesList = new List<EmployeeManagement>(); // List employees will be added to.
 
@@ -43,7 +43,7 @@ public class EmployeeManagement
     }
 
     public void AddEmployee(EmployeeManagement newEmployee)
-    {
+    {       
         // Add a new employee to the employee list.
     }
 

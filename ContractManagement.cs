@@ -52,7 +52,7 @@ public class Contract
         // Implementation to remove a contract
     }
 
-    public void ContractAvailability()
+    public static void ContractAvailability()
     {
         // Implementation to see what contracts are currently being offered
     }

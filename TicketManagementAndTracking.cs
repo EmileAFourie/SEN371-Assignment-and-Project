@@ -70,11 +70,6 @@ public class TicketManagementAndTracking
         // Manage the priority of a ticket with the given ticketID.
     }
 
-    private int GenerateTicketID()
-    {
-        // Generate a new unique ticketID.
-    }
-
     public TicketManagementAndTracking FindTicketByID(int ticketID)
     {
         // Find the ticket with the given ticketID and return the ticket object.
