@@ -1,6 +1,6 @@
 using System;
 
-public class CallCenter : TicketManagementAndTracking
+public class CallCenter : ClientDetail
 {
     private DateTime timeStamp;
     private string cellNo;
@@ -10,7 +10,8 @@ public class CallCenter : TicketManagementAndTracking
     public string CellNo { get => cellNo; set => cellNo = value; }
     public bool IsNew { get => isNew; set => isNew = value; }
 
-    public CallCenter(DateTime timeStamp, string cellNo, bool isNew) : base(timeStamp)
+    public CallCenter(DateTime timeStamp, string cellNo, bool isNew, int clientID, string name, string address, string email, string clientType, int contractId) 
+        : base(clientID, name, address, cellNo, email, clientType, contractId)
     {
         this.TimeStamp = timeStamp;
         this.CellNo = cellNo;
@@ -37,7 +38,7 @@ public class CallCenter : TicketManagementAndTracking
         // Implementation to create a new ticket for a client
     }
 
-    public ClientDetail GetClientDetails()
+    public new ClientDetail GetClientDetails()
     {
         // Implementation to obtain the client details        
     }

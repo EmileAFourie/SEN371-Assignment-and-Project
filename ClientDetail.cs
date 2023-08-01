@@ -1,4 +1,5 @@
 using System;
+
 public class ClientDetail
 {
     public int ClientID { get; set; }
@@ -9,7 +10,7 @@ public class ClientDetail
     protected int ContractId { get; set; }
     protected string ClientType { get; set; }
     
-    public Contract Contract { get; set; } //This shows that each client can only have one contract.
+    public Contract Contract { get; set; } // This shows that each client can only have one contract.
 
     public ClientDetail(int clientID, string name, string address, string cellNo, string email, string clientType, int contractId)
     {
