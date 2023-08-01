@@ -66,4 +66,8 @@ public class EmployeeManagement
     {
         // View a list of TicketIDs for active jobs related to an employee.        
     }
+
+    public void PerformanceReport(){
+        // Generate a performance report based on employees.
+    }
 }

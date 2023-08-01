@@ -1,69 +1,86 @@
 using System;
-using System.Collections.Generic;
-
-public class EmployeeManagement
-{
-    private int empID;
-    private string name;
-    private string email;
-    private string position;
-    private int age;
-    private string performance;
-    private List<int> ticketIDs;
-
-    private static List<EmployeeManagement> employeesList = new List<EmployeeManagement>();
-
-    public int EmpID { get => empID; set => empID = value; }
-    public string Name { get => name; set => name = value; }
-    public string Email { get => email; set => email = value; }
-    public string Position { get => position; set => position = value; }
-    public int Age { get => age; set => age = value; }
-    public string Performance { get => performance; set => performance = value; }
-    public List<int> TicketIDs { get => ticketIDs; set => ticketIDs = value; }
-
-    public EmployeeManagement(int empID, string name, string email, string position, int age, string performance)
-    {
-        this.empID = empID;
-        this.name = name;
-        this.email = email;
-        this.position = position;
-        this.age = age;
-        this.performance = performance;
-        this.ticketIDs = new List<int>();
-    }
-
-    public void ViewEmployee(int empID)
-    {
-        // View details of an employee by their EmpID.
-    }
-
-    public List<EmployeeManagement> ViewAllEmployees()
-    {
-        // View details of all employees in the company.
-    }
-
-    public void AddEmployee(EmployeeManagement newEmployee)
-    {
-        // Add a new employee to the employee list.
-    }
-
-    public void DeleteEmployee(int empID)
-    {
-        // Delete an employee from the employee list by their EmpID.
-    }
-
-    public void EditEmployee(int empID, EmployeeManagement updatedEmployee)
-    {
-        // Edit the details of an existing employee by their EmpID.
-    }
-
-    public void AssignTicket(int ticketID)
-    {
-        //  Assign a ticket to an employee by its TicketID.
-    }
+public class TicketManagementAndTracking
  
-    public List<int> ViewActiveJobs()
+{   
+    private int ClientID;
+    private string TypeOfErr;
+    private string Description;
+    private DateTime DateOpened;
+    private DateTime DateClosed;
+    private string Priority;
+    private string Status;
+    private int TicketID;
+    
+   public static List<TicketManagementAndTracking> allTicketsList = new List<TicketManagementAndTracking>();
+
+    public int ClientID1 { get => ClientID; set => ClientID = value; }
+    public string TypeOfErr1 { get => TypeOfErr; set => TypeOfErr = value; }
+    public string Description1 { get => Description; set => Description = value; }
+    public DateTime DateOpened1 { get => DateOpened; set => DateOpened = value; }
+    public DateTime DateClosed1 { get => DateClosed; set => DateClosed = value; }
+    public string Priority1 { get => Priority; set => Priority = value; }
+    public string Status1 { get => Status; set => Status = value; }
+    public int TicketID1 { get => TicketID; set => TicketID = value; }
+
+    public TicketManagementAndTracking(int clientID, string typeOfErr, string description, DateTime dateOpened, DateTime dateClosed, string priority, string status, int ticketID)
     {
-        // View a list of TicketIDs for active jobs related to an employee.
+        ClientID1 = clientID;
+        TypeOfErr1 = typeOfErr;
+        Description1 = description;
+        DateOpened1 = dateOpened;
+        DateClosed1 = dateClosed;
+        Priority1 = priority;
+        Status1 = status;
+        TicketID1 = ticketID;
+    }
+
+    public void LogTicket(int clientID, string typeOfErr, string description, DateTime dateOpened, string priority)
+    {
+       //Log a new ticket with provided details.
+    }
+
+   public void AssignTicketToEmployee(int ticketID, int employeeID)
+    {
+        //Assign a ticket to an employee with the given ticketID and employeeID.
+    }
+
+   public void UpdateTicketStatus(int ticketID, string status)
+    {
+        //Update the status of a ticket with the given ticketID.
+    }   
+
+   public TicketManagementAndTracking GetTicket(int ticketID)
+    {
+       //Get the ticket with the given ticketID.
+    }
+
+     public List<TicketManagementAndTracking> GetAllOpenTickets()
+    {
+     //Get a list of all open tickets.   
+    }
+
+    public List<TicketManagementAndTracking> GetAssignedTickets(int employeeID)
+    {
+       //Get a list of tickets assigned to the employee with the given employeeID.
+    }
+
+    public void ManagePriority(int ticketID, string priority)
+    {
+        //Manage the priority of a ticket with the given ticketID.
+    }
+
+  
+    private int GenerateTicketID()
+    {
+       //Generate a new unique ticketID.
+    }
+
+    public TicketManagementAndTracking FindTicketByID(int ticketID)
+    {
+        //Find the ticket with the given ticketID and return the ticket object.
     }
 }
+
+
+    
+    
