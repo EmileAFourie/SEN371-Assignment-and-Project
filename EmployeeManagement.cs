@@ -11,7 +11,7 @@ public class EmployeeManagement
     private string performance;
     private List<int> ticketIDs;
 
-    private static List<EmployeeManagement> employeesList = new List<EmployeeManagement>();
+    private static List<EmployeeManagement> employeesList = new List<EmployeeManagement>(); // List employees will be added to.
 
     public int EmpID { get => empID; set => empID = value; }
     public string Name { get => name; set => name = value; }
