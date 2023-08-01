@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-public class TicketManagementAndTracking
+public class TicketManagementAndTracking : ClientDetail
 {
     private int clientID;
     private string typeOfErr;

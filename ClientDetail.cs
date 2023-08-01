@@ -23,7 +23,7 @@ public class ClientDetail
         ContractId = contractId;
     }
 
-    public void UpdateContractDetails()
+    public void UpdateContactDetails()
     {
         // Implementation to modify the client details in the database
     }
