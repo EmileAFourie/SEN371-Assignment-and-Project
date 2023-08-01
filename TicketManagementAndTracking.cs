@@ -1,82 +1,69 @@
 using System;
-public class TicketManagementAndTracking
-{   
-    private int ClientID;
-    private string TypeOfErr;
-    private string Description;
-    private DateTime DateOpened;
-    private DateTime DateClosed;
-    private string Priority;
-    private string Status;
-    private int TicketID;
-    
-    public TicketManagementAndTracking(int clientID, string typeOfErr, string description, DateTime dateOpened, string priority, string status, int ticketID)
+using System.Collections.Generic;
+
+public class EmployeeManagement
+{
+    private int empID;
+    private string name;
+    private string email;
+    private string position;
+    private int age;
+    private string performance;
+    private List<int> ticketIDs;
+
+    private static List<EmployeeManagement> employeesList = new List<EmployeeManagement>();
+
+    public int EmpID { get => empID; set => empID = value; }
+    public string Name { get => name; set => name = value; }
+    public string Email { get => email; set => email = value; }
+    public string Position { get => position; set => position = value; }
+    public int Age { get => age; set => age = value; }
+    public string Performance { get => performance; set => performance = value; }
+    public List<int> TicketIDs { get => ticketIDs; set => ticketIDs = value; }
+
+    public EmployeeManagement(int empID, string name, string email, string position, int age, string performance)
     {
-        this.ClientID = clientID;
-        this.TypeOfErr = typeOfErr;
-        this.Description = description;
-        this.DateOpened = dateOpened;
-        this.Priority = priority;
-        this.Status = status;
-        this.TicketID = ticketID;
+        this.empID = empID;
+        this.name = name;
+        this.email = email;
+        this.position = position;
+        this.age = age;
+        this.performance = performance;
+        this.ticketIDs = new List<int>();
     }
 
-    public int ClientID1 { get => ClientID; set => ClientID = value; }
-    public string TypeOfErr1 { get => TypeOfErr; set => TypeOfErr = value; }
-    public string Description1 { get => Description; set => Description = value; }
-    public DateTime DateOpened1 { get => DateOpened; set => DateOpened = value; }
-    public DateTime DateClosed1 { get => DateClosed; set => DateClosed = value; }
-    public string Priority1 { get => Priority; set => Priority = value; }
-    public string Status1 { get => Status; set => Status = value; }
-    public int TicketID1 { get => TicketID; set => TicketID = value; }
-
-    
-    public void LogTicket(int clientID, string typeOfErr, string description, DateTime dateOpened, string priority)
+    public void ViewEmployee(int empID)
     {
-       
+        // View details of an employee by their EmpID.
     }
 
-   public void AssignTicketToEmployee(int ticketID, int employeeID)
+    public List<EmployeeManagement> ViewAllEmployees()
     {
-        
+        // View details of all employees in the company.
     }
 
-   public void UpdateTicketStatus(int ticketID, string status)
+    public void AddEmployee(EmployeeManagement newEmployee)
     {
-        
+        // Add a new employee to the employee list.
     }
 
-   public static List<TicketManagementAndTracking> allTicketsList = new List<TicketManagementAndTracking>();
+    public void DeleteEmployee(int empID)
+    {
+        // Delete an employee from the employee list by their EmpID.
+    }
 
+    public void EditEmployee(int empID, EmployeeManagement updatedEmployee)
+    {
+        // Edit the details of an existing employee by their EmpID.
+    }
+
+    public void AssignTicket(int ticketID)
+    {
+        //  Assign a ticket to an employee by its TicketID.
+    }
  
-    public TicketManagementAndTracking GetTicket(int ticketID)
+    public List<int> ViewActiveJobs()
     {
-       
-    }
-
-     public List<TicketManagementAndTracking> GetAllOpenTickets()
-    {
-        
-    }
-
-    public List<TicketManagementAndTracking> GetAssignedTickets(int employeeID)
-    {
-       
-    }
-
-    public void ManagePriority(int ticketID, string priority)
-    {
-        
-    }
-
-  
-    private int GenerateTicketID()
-    {
-       
-    }
-
-    public TicketManagementAndTracking FindTicketByID(int ticketID)
-    {
-        
+        // View a list of TicketIDs for active jobs related to an employee.
     }
 }
