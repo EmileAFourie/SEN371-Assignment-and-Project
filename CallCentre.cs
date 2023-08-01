@@ -1,41 +1,41 @@
 using System;
 
-public class CallCenter
+public class CallCenter : TicketManagementAndTracking
 {
-    private DateTime timestamp;
-    private string phoneNumber;
+    private string cellNo;
     private bool isNew;
 
-    public void AnswerCall(string phoneNumber, bool isNew)
-    {
-        this.timestamp = DateTime.Now;
-        this.phoneNumber = phoneNumber;
-        this.isNew = isNew;
+    public string CellNo { get => cellNo; set => cellNo = value; }
+    protected bool IsNew { get => isNew; set => isNew = value; }
 
-        Console.WriteLine($"Answering call from {phoneNumber}. Is new call: {isNew}");
+    public CallCenter(DateTime timeStamp, string cellNo, bool isNew) : base(timeStamp)
+    {
+        this.CellNo = cellNo;
+        this.IsNew = isNew;
     }
 
-    public void EndCall()
+    public void AnswerCall(string cellNo, bool isNew)
     {
-        Console.WriteLine($"Ending call from {phoneNumber}");
-        // Perform any necessary cleanup or logging here
+        // Implementation to start logging a call from a client
+    }
+
+    private void EndCall()
+    {
+        // Implementation to stop logging a call from a client
     }
 
     public void GetPreviousRequest()
     {
-        // Retrieve and display the previous request for this phone number
-        Console.WriteLine($"Getting previous request for {phoneNumber}");
+        // Implementation to retrieve the previous ticket logged by a client
     }
 
     public void CreateTicket(string issueDescription)
     {
-        // Create a new ticket with the provided issue description
-        Console.WriteLine($"Creating ticket for {phoneNumber} - Issue: {issueDescription}");
+        // Implementation to create a new ticket for a client
     }
 
-    public void GetClientDetails()
+    public ClientDetail GetClientDetails()
     {
-        // Retrieve and display client details based on the phone number
-        Console.WriteLine($"Getting client details for {phoneNumber}");
+        // Implementation to obtain the client details        
     }
 }
