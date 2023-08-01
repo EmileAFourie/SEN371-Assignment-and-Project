@@ -1,15 +1,4 @@
 using System;
-// ###############
-// ###############
-// ###############
-
-// this is now the base class
-
-// ###############
-// ###############
-// ###############
-// ###############
-
 public class CallCenter : ClientDetail
 {
     private DateTime timeStamp;

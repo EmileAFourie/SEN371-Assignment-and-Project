@@ -1,5 +1,14 @@
 using System;
+// ###############
+// ###############
+// ###############
 
+// this is now the base class
+
+// ###############
+// ###############
+// ###############
+// ###############
 public class ClientDetail
 {
     public int ClientID { get; set; }
