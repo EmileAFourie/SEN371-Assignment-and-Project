@@ -20,7 +20,7 @@ public class ClientDetail
         this.ContractId = ContractId;
     }
 
-    public void UpdateContractDetials()
+    public void UpdateContractDetails()
     {
         //Implemntation to modify the client detials in the database
     }
