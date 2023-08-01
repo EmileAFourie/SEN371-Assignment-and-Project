@@ -7,7 +7,6 @@ public class ClientDetail
     private string Email { get; set; }
     protected int ContractId { get; set; }
     protected string ClientType { get; set; }
-
     public Contract Contract { get; set; }
 
     public ClientDetail(int clientID, string name, string address, string cellNo, string email, string clientType, int contractId)

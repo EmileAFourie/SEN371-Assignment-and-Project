@@ -2,14 +2,17 @@ using System;
 
 public class CallCenter : TicketManagementAndTracking
 {
+    private DateTime timeStamp;
     private string cellNo;
     private bool isNew;
 
+    public DateTime TimeStamp { get => timeStamp; set => timeStamp = value; }
     public string CellNo { get => cellNo; set => cellNo = value; }
-    protected bool IsNew { get => isNew; set => isNew = value; }
+    public bool IsNew { get => isNew; set => isNew = value; }
 
     public CallCenter(DateTime timeStamp, string cellNo, bool isNew) : base(timeStamp)
     {
+        this.TimeStamp = timeStamp;
         this.CellNo = cellNo;
         this.IsNew = isNew;
     }

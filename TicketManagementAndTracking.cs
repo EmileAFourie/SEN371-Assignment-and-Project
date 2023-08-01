@@ -12,6 +12,18 @@ public class TicketManagementAndTracking
     private string status;
     private int ticketID;
 
+    public TicketManagementAndTracking(int clientID, string typeOfErr, string description, DateTime dateOpened, DateTime dateClosed, string priority, string status, int ticketID)
+    {
+        this.clientID = clientID;
+        this.typeOfErr = typeOfErr;
+        this.description = description;
+        this.dateOpened = dateOpened;
+        this.dateClosed = dateClosed;
+        this.priority = priority;
+        this.status = status;
+        this.ticketID = ticketID;
+    }
+
     public int ClientID { get => clientID; set => clientID = value; }
     public string TypeOfErr { get => typeOfErr; set => typeOfErr = value; }
     public string Description { get => description; set => description = value; }
@@ -21,10 +33,7 @@ public class TicketManagementAndTracking
     public string Status { get => status; set => status = value; }
     public int TicketID { get => ticketID; set => ticketID = value; }
 
-    public TicketManagementAndTracking(DateTime dateOpened)
-    {
-        this.DateOpened = dateOpened;
-    }
+   
 
     public void LogTicket(int clientID, string typeOfErr, string description, DateTime dateOpened, string priority)
     {
@@ -43,20 +52,17 @@ public class TicketManagementAndTracking
 
     public TicketManagementAndTracking GetTicket(int ticketID)
     {
-        // Get the ticket with the given ticketID.
-        return null; // Placeholder return value; replace with actual ticket object.
+        // Get the ticket with the given ticketID.       
     }
 
     public List<TicketManagementAndTracking> GetAllOpenTickets()
     {
         // Get a list of all open tickets.
-        return null; // Placeholder return value; replace with the actual list of tickets.
     }
 
     public List<TicketManagementAndTracking> GetAssignedTickets(int employeeID)
     {
         // Get a list of tickets assigned to the employee with the given employeeID.
-        return null; // Placeholder return value; replace with the actual list of tickets.
     }
 
     public void ManagePriority(int ticketID, string priority)
@@ -67,12 +73,10 @@ public class TicketManagementAndTracking
     private int GenerateTicketID()
     {
         // Generate a new unique ticketID.
-        return 0; // Placeholder return value; replace with the actual generated ticketID.
     }
 
     public TicketManagementAndTracking FindTicketByID(int ticketID)
     {
         // Find the ticket with the given ticketID and return the ticket object.
-        return null; // Placeholder return value; replace with the actual ticket object.
     }
 }
