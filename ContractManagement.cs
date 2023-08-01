@@ -1,3 +1,4 @@
+using System;
 public class Contract
 {
     public int ContractID { get; set; }
