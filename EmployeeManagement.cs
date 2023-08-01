@@ -1,3 +1,4 @@
+using System;
 public class EmployeeManagement
 {
     private int EmpID;
@@ -10,16 +11,23 @@ public class EmployeeManagement
 
     private static List<EmployeeManagement> employeesList = new List<EmployeeManagement>();
 
-    
+    public int EmpID1 { get => EmpID; set => EmpID = value; }
+    public string Name1 { get => Name; set => Name = value; }
+    public string Email1 { get => Email; set => Email = value; }
+    public string Position1 { get => Position; set => Position = value; }
+    public int Age1 { get => Age; set => Age = value; }
+    public string Performance1 { get => Performance; set => Performance = value; }
+    public List<int> TicketID1 { get => TicketID; set => TicketID = value; }
+
     public EmployeeManagement(int empID, string name, string email, string position, int age, string performance)
     {
-        this.EmpID = empID;
-        this.Name = name;
-        this.Email = email;
-        this.Position = position;
-        this.Age = age;
-        this.Performance = performance;
-        this.TicketID = new List<int>();
+        this.EmpID1 = empID;
+        this.Name1 = name;
+        this.Email1 = email;
+        this.Position1 = position;
+        this.Age1 = age;
+        this.Performance1 = performance;
+        this.TicketID1 = new List<int>();
     }
 
     

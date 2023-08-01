@@ -3,10 +3,19 @@ using System;
 public class CallCenter
 {
     private DateTime timeStamp;
-    public string cellNo;
-    protected bool isNew;
+    private string cellNo;
+    private bool isNew;
 
-    public CallCenter(){}
+    public DateTime TimeStamp { get => timeStamp; set => timeStamp = value; }
+    public string CellNo { get => cellNo; set => cellNo = value; }
+    protected bool IsNew { get => isNew; set => isNew = value; }
+
+    public CallCenter(DateTime timeStamp, string cellNo, bool isNew)
+    {
+        this.TimeStamp = timeStamp;
+        this.CellNo = cellNo;
+        this.IsNew = isNew;
+    }
 
     public void AnswerCall(string cellNo, bool isNew)
     {

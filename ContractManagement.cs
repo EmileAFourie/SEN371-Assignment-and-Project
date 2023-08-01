@@ -11,7 +11,18 @@ public class Contract
     protected bool Availablilty { get; set; }
     public int ClientID { get; set; }
 
-    public Contract (){ }
+    
+    public Contract(int contractID, string contractName, string startDate, string endDate, string description, double price, bool availablilty, int clientID)
+    {
+        ContractID = contractID;
+        ContractName = contractName;
+        StartDate = startDate;
+        EndDate = endDate;
+        Description = description;
+        Price = price;
+        Availablilty = availablilty;
+        ClientID = clientID;
+    }
 
     public void ModifyContract(string newName, string newDescription, double newFee)
     {

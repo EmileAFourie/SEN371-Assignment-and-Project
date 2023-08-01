@@ -1,6 +1,6 @@
+using System;
 public class TicketManagementAndTracking
-{
-   
+{   
     private int ClientID;
     private string TypeOfErr;
     private string Description;
@@ -20,6 +20,16 @@ public class TicketManagementAndTracking
         this.Status = status;
         this.TicketID = ticketID;
     }
+
+    public int ClientID1 { get => ClientID; set => ClientID = value; }
+    public string TypeOfErr1 { get => TypeOfErr; set => TypeOfErr = value; }
+    public string Description1 { get => Description; set => Description = value; }
+    public DateTime DateOpened1 { get => DateOpened; set => DateOpened = value; }
+    public DateTime DateClosed1 { get => DateClosed; set => DateClosed = value; }
+    public string Priority1 { get => Priority; set => Priority = value; }
+    public string Status1 { get => Status; set => Status = value; }
+    public int TicketID1 { get => TicketID; set => TicketID = value; }
+
     
     public void LogTicket(int clientID, string typeOfErr, string description, DateTime dateOpened, string priority)
     {
@@ -38,7 +48,8 @@ public class TicketManagementAndTracking
 
    public static List<TicketManagementAndTracking> allTicketsList = new List<TicketManagementAndTracking>();
 
-   public TicketManagementAndTracking GetTicket(int ticketID)
+ 
+    public TicketManagementAndTracking GetTicket(int ticketID)
     {
        
     }
