@@ -11,7 +11,6 @@ public class Contract
     protected bool Availablilty { get; set; }
     public int ClientID { get; set; }
 
-    
     public Contract(int contractID, string contractName, string startDate, string endDate, string description, double price, bool availablilty, int clientID)
     {
         ContractID = contractID;
@@ -26,30 +25,36 @@ public class Contract
 
     public void ModifyContract(string newName, string newDescription, double newFee)
     {
-        //Implementation to modify a existing contract
+        // Implementation to modify an existing contract
     }
+
     public void AddContract(string newName, string newDescription, double newFee)
     {
-        //Implementation to add a new contract
+        // Implementation to add a new contract
     }
+
     public void ViewActiveContracts()
     {
-        //Implementation to view the currently active contracts the client has
+        // Implementation to view the currently active contracts the client has
     }
+
     public void RenewContract()
     {
-        //Implementation to renew the currently active contract the client has
+        // Implementation to renew the currently active contract the client has
     }
+
     public void ViewContract()
     {
-        //Implementation to view the details of the avalible contracts
+        // Implementation to view the details of the available contracts
     }
+
     public void DeleteContract()
     {
-        //Implementation to remove a contract
+        // Implementation to remove a contract
     }
-    public void ContractAvailability()
+
+    public static void ContractAvailability()
     {
-        //Implementation to see what contacts are currently being offered
+        // Implementation to see what contracts are currently being offered
     }
 }

@@ -9,9 +9,9 @@ public class EmployeeManagement
     private string position;
     private int age;
     private string performance;
-    private List<int> ticketIDs;
+    private List<int> ticketIDs; // List to store ticket ID for one employee for multiple jobs i.e. one-to-many relationship
 
-    private static List<EmployeeManagement> employeesList = new List<EmployeeManagement>();
+    private static List<EmployeeManagement> employeesList = new List<EmployeeManagement>(); // List employees will be added to.
 
     public int EmpID { get => empID; set => empID = value; }
     public string Name { get => name; set => name = value; }
@@ -23,30 +23,30 @@ public class EmployeeManagement
 
     public EmployeeManagement(int empID, string name, string email, string position, int age, string performance)
     {
-        this.empID = empID;
-        this.name = name;
-        this.email = email;
-        this.position = position;
-        this.age = age;
-        this.performance = performance;
-        this.ticketIDs = new List<int>();
+        this.EmpID = empID;
+        this.Name = name;
+        this.Email = email;
+        this.Position = position;
+        this.Age = age;
+        this.Performance = performance;
+        this.TicketIDs = new List<int>();
     }
 
     public void ViewEmployee(int empID)
     {
-       //View details of an employee by their EmpID.
+        // View details of an employee by their EmpID.
     }
-    
+
     public List<EmployeeManagement> ViewAllEmployees()
     {
-       //View details of all employees in the company.
+        // View details of all employees in the company.       
     }
     
     public void AddEmployee(EmployeeManagement newEmployee)
-    {
+    {       
         // Add a new employee to the employee list.
     }
-    
+
     public void DeleteEmployee(int empID)
     {
         // Delete an employee from the employee list by their EmpID.
@@ -67,7 +67,8 @@ public class EmployeeManagement
         // View a list of TicketIDs for active jobs related to an employee.        
     }
 
-    public void PerformanceReport(){
+    public void PerformanceReport()
+    {
         // Generate a performance report based on employees.
     }
 }
