@@ -4,12 +4,13 @@ using Twilio.Rest.Api.V2010.Account;
 
 class Program
 {
+    /* string accountSid = "AC23b601fb4dbe7e1c1e5ead51dae7dba7";
+    string authToken = "9790543c1792b1065cf53bdae165aef9"; */
+    string accountSid = "ACd84e3e785bb900fc451780701904ca2e"; //Leandro's Trail Account
+    string authToken = "800ed79494e6fd60772b8320edd3f60f";
+
     static void Main(string[] args)
     {
-        // Twilio Account SID and Auth Token from your Twilio account
-        string accountSid = "AC23b601fb4dbe7e1c1e5ead51dae7dba7";
-        string authToken = "9790543c1792b1065cf53bdae165aef9";
-
         // Initialize the Twilio client
         TwilioClient.Init(accountSid, authToken);
 
@@ -38,6 +39,10 @@ class Program
         };
 
         var sentMessage = MessageResource.Create(messageOptions);
+    }
+
+    public bool SendClientTicket(TicketManagementAndTracking ticket){
+    
     }
 
 }
