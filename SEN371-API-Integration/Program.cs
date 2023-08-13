@@ -17,7 +17,7 @@ class Program
         string TicketID = "12345";
         string Description = "Install new HVAC system";
 
-        // Technicians' phone numbers 
+        // Employee's phone numbers 
         string technician1PhoneNumber = "+27763237618";       
 
         // Compose SMS message
@@ -26,7 +26,7 @@ class Program
         // Send SMS notifications to technicians
         SendMessage(technician1PhoneNumber, smsMessage);
         
-        Console.WriteLine("SMS notifications sent to technicians.");
+        Console.WriteLine("SMS notifications sent to Employee.");
     }
     static void SendMessage(string toPhoneNumber, string message)
     {
