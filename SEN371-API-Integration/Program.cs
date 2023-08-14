@@ -41,27 +41,28 @@ class Program
         var sentMessage = MessageResource.Create(messageOptions);
     }
 
-    public static bool SendClientTicket(TicketManagementAndTracking ticket)
+    public bool SendClientTicket(TicketManagementAndTracking ticket)
+    {
+        //string phone = "+27" + ticket.cellNo(1, 9);
+        string phone = "+27740136580";
+
+        try
         {
-            //string phone = "+27" + ticket.cellNo(1, 9);
-            string phone = "+27740136580";
+            TwilioClient.Init(accountSid, authToken);
 
-            try
-            {
-                TwilioClient.Init(accountSid, authToken);
-
-                var message = MessageResource.Create(
-                    body: $"\nPremier Service Solutions - There has been a update to one of your tickets: \nTicket {ticket.TicketID} has moved to {ticket.Status.ToLower()} at {ticket.DateClosed}",
-                    from: new Twilio.Types.PhoneNumber("+18156459747"),
-                    to: new Twilio.Types.PhoneNumber(phone)
-                );
-                return true;
-            }
-           catch
-           {
-               return false;
-           }
+            var message = MessageResource.Create(
+                body: $"\nPremier Service Solutions - There has been a update to one of your tickets: \nTicket {ticket.TicketID} has " +
+                " moved to {ticket.Status.ToLower()} at {ticket.DateClosed}",
+                from: new Twilio.Types.PhoneNumber("+18156459747"),
+                to: new Twilio.Types.PhoneNumber(phone)
+            );
+            return true;
         }
+        catch
+        {
+            return false;
+        }
+    }
 
 }
 
