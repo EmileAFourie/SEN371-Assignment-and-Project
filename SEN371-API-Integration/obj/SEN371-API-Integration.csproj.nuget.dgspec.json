@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\A - Work\\3rd Year\\SEN371\\Project 1\\SEN371-Assignment-and-Project\\SEN371-API-Integration\\SEN371-API-Integration.csproj": {}
+    "C:\\Users\\leand\\OneDrive\\Documents\\GitHub\\SEN371-Assignment-and-Project\\SEN371-API-Integration\\SEN371-API-Integration.csproj": {}
   },
   "projects": {
-    "E:\\A - Work\\3rd Year\\SEN371\\Project 1\\SEN371-Assignment-and-Project\\SEN371-API-Integration\\SEN371-API-Integration.csproj": {
+    "C:\\Users\\leand\\OneDrive\\Documents\\GitHub\\SEN371-Assignment-and-Project\\SEN371-API-Integration\\SEN371-API-Integration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\A - Work\\3rd Year\\SEN371\\Project 1\\SEN371-Assignment-and-Project\\SEN371-API-Integration\\SEN371-API-Integration.csproj",
+        "projectUniqueName": "C:\\Users\\leand\\OneDrive\\Documents\\GitHub\\SEN371-Assignment-and-Project\\SEN371-API-Integration\\SEN371-API-Integration.csproj",
         "projectName": "SEN371-API-Integration",
-        "projectPath": "E:\\A - Work\\3rd Year\\SEN371\\Project 1\\SEN371-Assignment-and-Project\\SEN371-API-Integration\\SEN371-API-Integration.csproj",
-        "packagesPath": "C:\\Users\\emile\\.nuget\\packages\\",
-        "outputPath": "E:\\A - Work\\3rd Year\\SEN371\\Project 1\\SEN371-Assignment-and-Project\\SEN371-API-Integration\\obj\\",
+        "projectPath": "C:\\Users\\leand\\OneDrive\\Documents\\GitHub\\SEN371-Assignment-and-Project\\SEN371-API-Integration\\SEN371-API-Integration.csproj",
+        "packagesPath": "C:\\Users\\leand\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\leand\\OneDrive\\Documents\\GitHub\\SEN371-Assignment-and-Project\\SEN371-API-Integration\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\emile\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\leand\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
